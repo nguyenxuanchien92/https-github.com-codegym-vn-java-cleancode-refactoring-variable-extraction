@@ -1,12 +1,16 @@
 public class FizzBuzz {
-    public static String fizzBuzz(int number){
-        if(number % 3 == 0 && number % 5 == 0)
+
+
+    public static String fizzBuzz(int number) {
+        int fizz = number % 3;
+        int buzz = number % 5;
+        if (fizz == 0&& buzz == 0)
             return "FizzBuzz";
 
-        if(number % 3 == 0)
+        if (fizz == 0)
             return "Fizz";
 
-        if(number % 5 == 0)
+        if (buzz == 0)
             return "Buzz";
 
         return number + "";
